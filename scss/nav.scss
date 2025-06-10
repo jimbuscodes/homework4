@@ -26,22 +26,22 @@
         font-family: gillsans-reg;
       }
     }
+  }
 
-    .links {
-      width: 320px;
-      display: flex;
-      justify-content: space-around;
+  .links {
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
 
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 15px;
-        font-family: gillsans-reg;
-      }
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      font-family: gillsans-reg;
+    }
 
-      span {
-        color: #ee4367;
-      }
+    span {
+      color: #ee4367;
     }
   }
 }
