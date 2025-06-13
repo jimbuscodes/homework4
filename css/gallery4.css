@@ -1,0 +1,80 @@
+.wrapper2 {
+  padding-top: 143px;
+}
+.wrapper2 .image2 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 980px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 67, 103, 0.8))), url(../images/2.jpeg);
+  background-image: linear-gradient(to bottom rgba(238, 67, 103, 0.8), rgba(238, 67, 103, 0.8)), url(../images/2.jpeg);
+  background-size: cover;
+  background-position: -20px;
+  background-repeat: no-repeat;
+}
+.wrapper2 .image2 .image-title2 {
+  margin: 0 auto;
+  padding-left: 5px;
+  position: absolute;
+  bottom: 0;
+}
+.wrapper2 .image2 .image-title2 .num2 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  text-transform: uppercase;
+  color: #ee4367;
+  line-height: 0;
+  margin-right: 0px;
+}
+.wrapper2 .image2 .image-title2 .dot2 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  color: #ee4367;
+  line-height: 0;
+  margin-right: 40px;
+}
+.wrapper2 .image2 .image-title2 .text2 {
+  margin-left: 0px;
+  font-family: gillsans-reg;
+  font-size: 140px;
+  color: #ee4367;
+  line-height: 0;
+}
+.wrapper2 .paragraphs {
+  margin: 0 auto;
+  max-width: 980px;
+  height: 200px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper2 .paragraphs .col {
+  max-width: 450px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: gillsans-light-italic;
+  font-size: 16px;
+  color: #000;
+}
+
+@media (max-width: 950px) {
+  .wrapper4 .image4 .image-title4 .num4 {
+    font-size: 150px;
+  }
+  .wrapper4 .image4 .image-title4 .dot4 {
+    font-size: 150px;
+  }
+  .wrapper4 .image4 .image-title4 .text4 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 980px) {
+  .wrapper .paragraphs .col {
+    padding: 10px;
+  }
+}

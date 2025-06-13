@@ -112,8 +112,8 @@ p {
 }
 .hero {
   height: 500px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(../images/home-hero.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.65)), to(rgba(255, 209, 64, 0.65))), url(../images/home-hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.65), rgba(255, 209, 64, 0.65)), url(../images/home-hero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -471,8 +471,8 @@ footer .copyright {
   max-width: 980px;
   height: 379px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(../images/about.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/about.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.65)), to(rgba(255, 209, 64, 0.65))), url(../images/about.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.65), rgba(255, 209, 64, 0.65)), url(../images/about.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -496,10 +496,16 @@ footer .copyright {
   color: #707070;
 }
 
+@media (max-width: 980px) {
+  .about-wrapper .history p {
+    padding: 10px;
+  }
+}
 .black-nav-wrapper {
   height: 90px;
   width: 100%;
   position: fixed;
+  z-index: 1000;
 }
 .black-nav-wrapper nav {
   width: 100%;
@@ -592,24 +598,24 @@ footer .copyright {
 .gallery .gallery-images .row-one .pic-one {
   height: 187px;
   width: 498px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8))), url(../images/1.png);
-  background-image: linear-gradient(to bottom rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/1.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.65))), url(../images/1.png);
+  background-image: linear-gradient(to bottom rgba(255, 209, 64, 0.65), rgba(255, 209, 64, 0.65)), url(../images/1.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .gallery .gallery-images .row-one .pic-two {
   height: 187px;
   width: 187px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 67, 103, 0.8))), url(../images/2.jpeg);
-  background-image: linear-gradient(to bottom rgba(238, 67, 103, 0.8), rgba(238, 67, 103, 0.8)), url(../images/2.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 67, 103, 0.65))), url(../images/2.jpeg);
+  background-image: linear-gradient(to bottom rgba(238, 67, 103, 0.65), rgba(238, 67, 103, 0.65)), url(../images/2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .gallery .gallery-images .row-one .pic-three {
   height: 187px;
   width: 265px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 173, 105, 0.8))), url(../images/3.jpg);
-  background-image: linear-gradient(to bottom rgba(8, 173, 105, 0.8), rgba(8, 173, 105, 0.8)), url(../images/3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 173, 105, 0.65))), url(../images/3.jpg);
+  background-image: linear-gradient(to bottom rgba(8, 173, 105, 0.65), rgba(8, 173, 105, 0.65)), url(../images/3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -625,18 +631,26 @@ footer .copyright {
 .gallery .gallery-images .row-two .pic-four {
   height: 306px;
   width: 603px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(84, 13, 110, 0.8))), url(../images/4.jpg);
-  background-image: linear-gradient(to bottom rgba(84, 13, 110, 0.8), rgba(84, 13, 110, 0.8)), url(../images/4.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(84, 13, 110, 0.65))), url(../images/4.jpg);
+  background-image: linear-gradient(to bottom rgba(84, 13, 110, 0.65), rgba(84, 13, 110, 0.65)), url(../images/4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .gallery .gallery-images .row-two .pic-five {
   height: 306px;
   width: 355px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 206, 171, 0.8))), url(../images/5.png);
-  background-image: linear-gradient(to bottom rgba(59, 206, 171, 0.8), rgba(59, 206, 171, 0.8)), url(../images/5.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 206, 171, 0.65))), url(../images/5.png);
+  background-image: linear-gradient(to bottom rgba(59, 206, 171, 0.65), rgba(59, 206, 171, 0.65)), url(../images/5.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.gallery-links a {
+  font-family: gillsans-reg;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 10px;
 }
 
 @media (max-width: 980px) {
@@ -680,5 +694,402 @@ footer .copyright {
   .gallery .gallery-images .row-two .pic-five {
     margin-bottom: 20px;
     width: 600px;
+  }
+}
+.wrapper {
+  padding-top: 143px;
+}
+.wrapper .image {
+  position: relative;
+  margin: 0 auto;
+  max-width: 980px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.65))), url(../images/1.png);
+  background-image: linear-gradient(to bottom rgba(255, 209, 64, 0.65), rgba(255, 209, 64, 0.65)), url(../images/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.wrapper .image .image-title {
+  margin: 0 auto;
+  padding-left: 10px;
+  position: absolute;
+  bottom: 0;
+}
+.wrapper .image .image-title .num {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  text-transform: uppercase;
+  color: #ffd140;
+  line-height: 0;
+  margin-right: 50px;
+}
+.wrapper .image .image-title .dot {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  color: #ffd140;
+  line-height: 0;
+}
+.wrapper .image .image-title .text {
+  margin-left: 0px;
+  font-family: gillsans-reg;
+  font-size: 140px;
+  color: #ffd140;
+  line-height: 0;
+}
+.wrapper .paragraphs {
+  margin: 0 auto;
+  max-width: 980px;
+  height: 200px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .paragraphs .col {
+  max-width: 450px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: gillsans-light-italic;
+  font-size: 16px;
+  color: #000;
+}
+
+@media (max-width: 950px) {
+  .wrapper .image .image-title .num {
+    font-size: 150px;
+  }
+  .wrapper .image .image-title .dot {
+    font-size: 150px;
+  }
+  .wrapper .image .image-title .text {
+    font-size: 70px;
+  }
+}
+@media (max-width: 980px) {
+  .wrapper .paragraphs .col {
+    padding: 10px;
+  }
+}
+.wrapper2 {
+  padding-top: 143px;
+}
+.wrapper2 .image2 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 980px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 67, 103, 0.65))), url(../images/2.jpeg);
+  background-image: linear-gradient(to bottom rgba(238, 67, 103, 0.65), rgba(238, 67, 103, 0.65)), url(../images/2.jpeg);
+  background-size: cover;
+  background-position: -20px;
+  background-repeat: no-repeat;
+}
+.wrapper2 .image2 .image-title2 {
+  margin: 0 auto;
+  padding-left: 5px;
+  position: absolute;
+  bottom: 0;
+}
+.wrapper2 .image2 .image-title2 .num2 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  text-transform: uppercase;
+  color: #ee4367;
+  line-height: 0;
+  margin-right: 0px;
+}
+.wrapper2 .image2 .image-title2 .dot2 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  color: #ee4367;
+  line-height: 0;
+  margin-right: 40px;
+}
+.wrapper2 .image2 .image-title2 .text2 {
+  margin-left: 0px;
+  font-family: gillsans-reg;
+  font-size: 140px;
+  color: #ee4367;
+  line-height: 0;
+}
+.wrapper2 .paragraphs {
+  margin: 0 auto;
+  max-width: 980px;
+  height: 200px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper2 .paragraphs .col {
+  max-width: 450px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: gillsans-light-italic;
+  font-size: 16px;
+  color: #000;
+}
+
+@media (max-width: 950px) {
+  .wrapper2 .image2 .image-title2 .num2 {
+    font-size: 150px;
+  }
+  .wrapper2 .image2 .image-title2 .dot2 {
+    font-size: 150px;
+  }
+  .wrapper2 .image2 .image-title2 .text2 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 980px) {
+  .wrapper2 .paragraphs .col {
+    padding: 10px;
+  }
+}
+.wrapper3 {
+  padding-top: 143px;
+}
+.wrapper3 .image3 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 980px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 173, 105, 0.65))), url(../images/3.jpg);
+  background-image: linear-gradient(to bottom rgba(8, 173, 105, 0.65), rgba(8, 173, 105, 0.65)), url(../images/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.wrapper3 .image3 .image-title3 {
+  margin: 0 auto;
+  padding-left: 10px;
+  position: absolute;
+  bottom: 0;
+}
+.wrapper3 .image3 .image-title3 .num3 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  text-transform: uppercase;
+  color: #08ad69;
+  line-height: 0;
+  margin-right: 50px;
+}
+.wrapper3 .image3 .image-title3 .dot3 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  color: #08ad69;
+  line-height: 0;
+}
+.wrapper3 .image3 .image-title3 .text3 {
+  margin-left: 20px;
+  font-family: gillsans-reg;
+  font-size: 140px;
+  color: #08ad69;
+  line-height: 0;
+}
+.wrapper3 .paragraphs {
+  margin: 0 auto;
+  max-width: 980px;
+  height: 200px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper3 .paragraphs .col {
+  max-width: 450px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: gillsans-light-italic;
+  font-size: 16px;
+  color: #000;
+}
+
+@media (max-width: 950px) {
+  .wrapper3 .image3 .image-title3 .num3 {
+    font-size: 150px;
+  }
+  .wrapper3 .image3 .image-title3 .dot3 {
+    font-size: 150px;
+  }
+  .wrapper3 .image3 .image-title3 .text3 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 980px) {
+  .wrapper3 .paragraphs .col {
+    padding: 10px;
+  }
+}
+.wrapper4 {
+  padding-top: 143px;
+}
+.wrapper4 .image4 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 980px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(84, 13, 110, 0.65))), url(../images/4.jpg);
+  background-image: linear-gradient(to bottom rgba(84, 13, 110, 0.65), rgba(84, 13, 110, 0.65)), url(../images/4.jpg);
+  background-size: cover;
+  background-position: -20px;
+  background-repeat: no-repeat;
+}
+.wrapper4 .image4 .image-title4 {
+  margin: 0 auto;
+  padding-left: 5px;
+  position: absolute;
+  bottom: 0;
+}
+.wrapper4 .image4 .image-title4 .num4 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  text-transform: uppercase;
+  color: #540d6e;
+  line-height: 0;
+  margin-right: 0px;
+}
+.wrapper4 .image4 .image-title4 .dot4 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  color: #540d6e;
+  line-height: 0;
+  margin-right: 40px;
+}
+.wrapper4 .image4 .image-title4 .text4 {
+  margin-left: 0px;
+  font-family: gillsans-reg;
+  font-size: 115px;
+  color: #540d6e;
+  line-height: 0;
+}
+.wrapper4 .paragraphs {
+  margin: 0 auto;
+  max-width: 980px;
+  height: 200px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper4 .paragraphs .col {
+  max-width: 450px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: gillsans-light-italic;
+  font-size: 16px;
+  color: #000;
+}
+
+@media (max-width: 950px) {
+  .wrapper4 .image4 .image-title4 .num4 {
+    font-size: 150px;
+  }
+  .wrapper4 .image4 .image-title4 .dot4 {
+    font-size: 150px;
+  }
+  .wrapper4 .image4 .image-title4 .text4 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 980px) {
+  .wrapper4 .paragraphs .col {
+    padding: 10px;
+  }
+}
+.wrapper5 {
+  padding-top: 143px;
+}
+.wrapper5 .image5 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 980px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 206, 171, 0.65))), url(../images/5.png);
+  background-image: linear-gradient(to bottom rgba(59, 206, 171, 0.65), rgba(59, 206, 171, 0.65)), url(../images/5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper5 .image5 .image-title5 {
+  margin: 0 auto;
+  padding-left: 5px;
+  position: absolute;
+  bottom: 0;
+}
+.wrapper5 .image5 .image-title5 .num5 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  text-transform: uppercase;
+  color: #3bceab;
+  line-height: 0;
+  margin-right: 0px;
+}
+.wrapper5 .image5 .image-title5 .dot5 {
+  font-family: gillsans-reg;
+  font-size: 300px;
+  color: #3bceab;
+  line-height: 0;
+  margin-right: 40px;
+}
+.wrapper5 .image5 .image-title5 .text5 {
+  margin-left: 0px;
+  font-family: gillsans-reg;
+  font-size: 115px;
+  color: #3bceab;
+  line-height: 0;
+}
+.wrapper5 .paragraphs {
+  margin: 0 auto;
+  max-width: 980px;
+  height: 200px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper5 .paragraphs .col {
+  max-width: 450px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: gillsans-light-italic;
+  font-size: 16px;
+  color: #000;
+}
+
+@media (max-width: 950px) {
+  .wrapper4 .image4 .image-title4 .num4 {
+    font-size: 150px;
+  }
+  .wrapper4 .image4 .image-title4 .dot4 {
+    font-size: 150px;
+  }
+  .wrapper4 .image4 .image-title4 .text4 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 980px) {
+  .wrapper5 .paragraphs .col {
+    padding: 10px;
   }
 }
