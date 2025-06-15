@@ -867,7 +867,6 @@ footer .copyright {
   background-image: linear-gradient(to bottom rgba(8, 173, 105, 0.65), rgba(8, 173, 105, 0.65)), url(../images/3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 .wrapper3 .image3 .image-title3 {
   margin: 0 auto;
